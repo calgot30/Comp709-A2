@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C4FF"
+    tools:context=".main_menu_nav.Learn_screen">
+
+    <LinearLayout
+        android:id="@+id/TopBar"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="start|center_horizontal|end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ProfileView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="right"
+            android:text="@string/learn"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:text="@string/understand_the_basics_of_music_theory"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/MainContentNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBar" />
+
+    <LinearLayout
+        android:id="@+id/MainContentNav"
+        android:layout_width="347dp"
+        android:layout_height="334dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="10dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBar">
+
+        <LinearLayout
+            android:id="@+id/Centralizer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/NotationLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/NotationButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_button_colored"
+                    android:src="@drawable/quaver_button_small" />
+
+                <TextView
+                    android:id="@+id/NotationText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/notation"
+                    android:textAlignment="gravity" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/RhythmLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/RhythmButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_button_colored"
+                    android:onClick="RhythmNav"
+                    android:src="@drawable/rhythm_small" />
+
+                <TextView
+                    android:id="@+id/RhythmText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rhythm" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/DynamicsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/DynamicButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_button_colored"
+                    android:onClick="DynamicsNav"
+                    android:src="@drawable/fortissimo_small" />
+
+                <TextView
+                    android:id="@+id/DynamicText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dynamics" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

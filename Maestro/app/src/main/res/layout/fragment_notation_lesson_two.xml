@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".notation_lessons.NotationLessonTwo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp">
+
+            <TextView
+                android:id="@+id/promptText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Swipe to Navigate"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="59dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/informationOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="The First note we're going to cover is called a 'Crotchet'"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="356dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/informationTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="A 'Crotchet' is the most commonly seen note in music, it has a musical count of 'one'.  (Don't worry about what 'count' means for now, it will be covered in the 'Rhythm' lessons)."
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="42dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="168dp"
+            android:layout_marginBottom="52dp"
+            android:src="@drawable/crotchet_button_small"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

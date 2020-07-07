@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".rhythm_lessons.RhythmLessonOne">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp">
+
+            <TextView
+                android:id="@+id/promptText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Swipe to Navigate"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="59dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/informationOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Keeping time is very important within the world of music, its as important as keeping the correct pitch of a song.  You can't play song well without good 'rhythm'."
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="269dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="65dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" >
+
+            <TextView
+                android:id="@+id/informationTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="There are many different symbols to help keep you 'in time', some symbols are there to tell musicians when to stop playing music altogether and just 'rest'."
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

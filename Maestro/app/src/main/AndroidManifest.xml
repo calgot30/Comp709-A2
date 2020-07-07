@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.maestro">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".test_hard.TestHardThree"></activity>
+        <activity android:name=".test_hard.TestHardTwo" />
+        <activity android:name=".test_medium.TestMediumThree" />
+        <activity android:name=".test_medium.TestMediumTwo" />
+        <activity android:name=".test_easy.TestCongrats" />
+        <activity android:name=".test_hard.TestHardOne" />
+        <activity android:name=".test_medium.TestMediumOne" />
+        <activity android:name=".test_easy.TestEasyThree" />
+        <activity android:name=".test_easy.TestEasyTwo" />
+        <activity android:name=".test_easy.TestEasyOne" />
+        <activity android:name=".test_rhythm.TestRhythmThree" />
+        <activity android:name=".test_rhythm.TestRhythmTwo" />
+        <activity android:name=".test_rhythm.TestRhythmOne" />
+        <activity android:name=".test_dynamics.TestDynamicsFour" />
+        <activity android:name=".test_dynamics.TestDynamicsThree" />
+        <activity android:name=".test_dynamics.TestDynamicsTwo" />
+        <activity android:name=".test_dynamics.TestDynamicsOne" />
+        <activity android:name=".Test.TestNotationCongrats" />
+        <activity android:name=".Test.TestNotationThree" />
+        <activity android:name=".Test.TestNotationTwo" />
+        <activity android:name=".TestNotation" />
+        <activity android:name=".Dynamics" />
+        <activity android:name=".Rhythm" />
+        <activity android:name=".Notation" />
+        <activity android:name=".Play" />
+        <activity android:name=".Profile" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

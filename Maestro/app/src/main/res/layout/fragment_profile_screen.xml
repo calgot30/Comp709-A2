@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C4FF"
+    tools:context=".main_menu_nav.Profile_screen">
+
+    <LinearLayout
+        android:id="@+id/TopBar"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:gravity="start|center_horizontal|end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ProfileView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="right"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="137dp"
+        android:text="Name:             Callum"
+        app:layout_constraintBottom_toTopOf="@+id/info2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="136dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="137dp"
+        android:text="Lessons:        None"
+        app:layout_constraintBottom_toTopOf="@+id/info3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info" />
+
+    <TextView
+        android:id="@+id/info3"
+        android:layout_width="136dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="269dp"
+        android:text="Games Won: none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info2" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="130dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/profile_image_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
